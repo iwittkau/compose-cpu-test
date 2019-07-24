@@ -1,0 +1,18 @@
+version: '2.2'
+services: 
+  load-1:
+    image: playground/compose-cpu-test
+    cpus: 0.50
+    command: ["-cpus=8"]
+  load-2:
+    image: playground/compose-cpu-test
+    cpus: 0.25
+    command: ["-cpus=1"]
+  load-3:
+    image: playground/compose-cpu-test
+    cpus: 0.25
+    command: ["-cpus=1"]
+  load-4:
+    image: playground/compose-cpu-test
+    cpus: 0.25
+    command: ["-cpus=1"]
